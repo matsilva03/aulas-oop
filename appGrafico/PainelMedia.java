@@ -77,6 +77,14 @@ public class PainelMedia extends JPanel {
 		add(btnCalcular);
 		
 		JButton btnLimpar = new JButton("Limpar");
+		btnLimpar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				tfNota1.setText("");
+				tfNota2.setText("");
+				tfMedia.setText("");			
+				tfNota1.requestFocus();
+			}
+		});
 		btnLimpar.setBounds(216, 154, 89, 23);
 		add(btnLimpar);
 		
